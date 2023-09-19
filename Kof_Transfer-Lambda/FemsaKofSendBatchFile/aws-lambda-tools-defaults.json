@@ -1,0 +1,27 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "kof",
+    "region"      : "us-east-1",
+    "configuration" : "Debug",
+    "function-architecture" : "x86_64",
+    "function-runtime"      : "dotnet6",
+    "function-memory-size"  : 256,
+    "function-timeout"      : 30,
+    "function-handler"      : "FemsaKofSendBatchFile::FemsaKofSendBatchFile.Function::FunctionHandler",
+    "framework"             : "net6.0",
+    "function-name"         : "FemsaKofSendBatchFile",
+    "package-type"          : "Zip",
+    "function-role"         : "arn:aws:iam::037489010999:role/lambda_exec_FemsaKofSendBatchFile",
+    "function-subnets"      : "",
+    "function-security-groups" : "",
+    "tracing-mode"             : "PassThrough",
+    "environment-variables"    : "\"SponsorId\"=\"1\";\"GravtyApigeeProxy\"=\"https://craqddxulg.execute-api.us-east-1.amazonaws.com/gravtyBatchProcessing\";\"ApiKey\"=\"RzGVFzmFub2Lv6FRswO3a76ZqnI6BhMQ2FMdmsaf\";\"UserName\"=\"miguel.centeno@digitalfemsa.com\";\"GravtyGetSignedURL\"=\"https://craqddxulg.execute-api.us-east-1.amazonaws.com/gravtyBatchProcessing\";\"BatchId\"=\"1\";\"GravtyLoginURL\"=\"https://api.uso21.gravty.io/v1/login\";\"Password\"=\"D1g1t4l#2023\"",
+    "image-tag"                : "",
+    "function-description"     : ""
+}
